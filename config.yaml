@@ -1,0 +1,25 @@
+input:
+  log_file: "apache_log.txt"
+  processing_mode: memory  # memory or streaming
+
+cache:
+  enabled: true  # cache extraction results by IP
+
+geoip:
+  database_path: "GeoLite2-Country_20260120/GeoLite2-Country.mmdb"
+  mode: memory  # memory, mmap, or disk
+
+dimensions:
+  - name: country
+    enabled: true
+  - name: os
+    enabled: true
+  - name: browser
+    enabled: true
+
+output:
+  format: console
+  sort_by: percentage
+  sort_order: descending
+  cutoff_percentage: 0  # values below this are grouped into "Other"
+  show_execution_time: false
