@@ -2,7 +2,7 @@
 
 A statistical reporting module that analyzes Apache web server logs and produces percentage breakdowns by Country, OS, and Browser.
 
-you can find the desgin doc for this project in the DESIGN,md file
+You can find the design doc for this project in the **DESIGN.md** file.
 
 
 ## Requirements
